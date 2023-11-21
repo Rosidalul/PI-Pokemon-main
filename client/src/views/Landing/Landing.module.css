@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+.landing {
+    background-image: url("./fondo-detail.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.overlay a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: all .8s;
+}
+.overlay a:hover{
+    transform: scale(1.5);
+    background-color: #fff;
+    color: black;
+    text-decoration: underline;
+}
+.titulo{
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 120px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subt{
+    margin-top: 10px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ 
+}
+.bola{
+    height: 80px;
+    margin-top: -20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .bola{
+      animation: rotar-spin infinite 5s linear;
+    }
+  }
+  @keyframes rotar-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.homeContainer {
+    padding: 20px;
+    background-color: #7a3e3e;
+    background-image: url('https://www.colgate.com/content/dam/cp-sites/oral-care/oral-care-center-relaunch/global/product-detail-pages/background/pokemon-pikachu-background.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 120px;
+}
+
+.orderButtonsContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filterSortBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252525;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.filterContainer,
+.sortContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.filterLabel,
+.sortLabel {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #ffff;
+}
+
+.filterSelectors,
+.sortSelectors {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #252525;
+    border: none;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #1d1d1d;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #1e1e1e;
+}
+
+.typeName {
+    text-transform: capitalize;
+}
+@media screen and (max-width: 480px) {
+    .container {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .navigation {
+        margin-bottom: 10px;
+    }
+
+    .navigation-item {
+        font-size: 14px;
+    }
+
+    .filterSortBar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .filterContainer,
+    .sortContainer {
+        margin-bottom: 10px;
+    }
+
+    .filterLabel,
+    .sortLabel {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    select {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

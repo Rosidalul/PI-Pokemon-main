@@ -1,0 +1,20 @@
+.searchInput {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 500px;
+    margin-right: 10px;
+}
+.errorfound {
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
